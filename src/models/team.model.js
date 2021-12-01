@@ -1,16 +1,16 @@
 module.exports = (sequelize, DataTypes) => {
-    const Material = sequelize.define('Material', {
+    const Team = sequelize.define('Team', {
         id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true
         },
         nome: DataTypes.STRING,
-        quantidade: DataTypes.STRING,
-        valor: DataTypes.STRING,
+        estado: DataTypes.STRING,
+        site: DataTypes.STRING,
     }, {
         timestamps: false,
         freezeTableName: true
     })
-    return Material
+    return Team
 }

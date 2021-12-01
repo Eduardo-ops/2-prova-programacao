@@ -1,10 +1,10 @@
 const express = require('express')
-const materialRoute = require('./routes/material.route')
+const teamRoute = require('./routes/team.route')
 
 const app = express()
 app.use(express.json())
 
-app.use('/materials', materialRoute)
+app.use('/api/v1/', teamRoute)
 
 app.get('/', (req, res) => {
     res.send('Hello World')
