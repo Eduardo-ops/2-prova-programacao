@@ -3,5 +3,5 @@ module.exports = {
     password: 'admin',
     database: 'admin',
     host: '127.0.0.1',
-    dialect: 'postgres'
+    dialect: 'mysql'
 }

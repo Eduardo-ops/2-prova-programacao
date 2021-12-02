@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes) => {
         },
         nome: DataTypes.STRING,
         estado: DataTypes.STRING,
-        site: DataTypes.STRING,
+        sites: DataTypes.STRING,
     }, {
         timestamps: false,
         freezeTableName: true
